@@ -1,0 +1,191 @@
+{
+  "01-cafe.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "달빛커피",
+    "business_number": "123-45-67891",
+    "date": "2026-10-14",
+    "time": "08:42",
+    "currency": "KRW",
+    "total": 9000,
+    "breakdown": [
+      9000,
+      8182,
+      818
+    ],
+    "category": "cafe",
+    "payment": "card"
+  },
+  "02-kimbap.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "온누리김밥",
+    "business_number": "214-03-55124",
+    "date": "2026-10-14",
+    "time": "12:31",
+    "currency": "KRW",
+    "total": 8500,
+    "breakdown": [
+      4500,
+      4000,
+      7727,
+      773
+    ],
+    "category": "meals",
+    "payment": "card"
+  },
+  "03-taxi.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "택시",
+    "business_number": "108-90-66215",
+    "date": "2026-10-15",
+    "time": "23:41",
+    "currency": "KRW",
+    "total": 18700,
+    "breakdown": [
+      4800,
+      13900
+    ],
+    "category": "transport",
+    "payment": "card"
+  },
+  "04-mart.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "하루마트",
+    "business_number": "220-81-77344",
+    "date": "2026-10-16",
+    "time": "07:55",
+    "currency": "KRW",
+    "total": 4200,
+    "breakdown": [
+      1500,
+      1000,
+      1700,
+      3818,
+      382
+    ],
+    "category": "meals",
+    "payment": "cash"
+  },
+  "05-stationery.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "한빛문구",
+    "business_number": "120-14-66905",
+    "date": "2026-10-16",
+    "time": "14:05",
+    "currency": "KRW",
+    "total": 12400,
+    "breakdown": [
+      6900,
+      4500,
+      1000,
+      11273,
+      1127
+    ],
+    "category": "supplies",
+    "payment": "card"
+  },
+  "06-dinner.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "참숯마을",
+    "business_number": "211-28-90106",
+    "date": "2026-10-17",
+    "time": "21:48",
+    "currency": "KRW",
+    "total": 144000,
+    "breakdown": [
+      90000,
+      8000,
+      6000,
+      20000,
+      20000,
+      130909,
+      13091
+    ],
+    "category": "meals",
+    "payment": "card"
+  },
+  "07-kimbap-again.jpg": {
+    "is_receipt": true,
+    "expect_flags": [
+      "possible_duplicate"
+    ],
+    "merchant": "온누리김밥",
+    "business_number": "214-03-55124",
+    "date": "2026-10-14",
+    "time": "12:31",
+    "currency": "KRW",
+    "total": 8500,
+    "breakdown": [
+      4500,
+      4000,
+      7727,
+      773
+    ],
+    "category": "meals",
+    "payment": "card"
+  },
+  "08-sf-coffee.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "Blue Harbor Coffee",
+    "business_number": "",
+    "date": "2026-10-13",
+    "time": "09:15",
+    "currency": "USD",
+    "total": 12.86,
+    "breakdown": [
+      5.75,
+      4.25,
+      10.0,
+      0.86,
+      2.0
+    ],
+    "category": "cafe",
+    "payment": "card"
+  },
+  "09-note.jpg": {
+    "is_receipt": false,
+    "expect_flags": [
+      "not_receipt"
+    ]
+  },
+  "10-parking.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "한빛빌딩",
+    "business_number": "119-86-22049",
+    "date": "2026-10-16",
+    "time": "18:40",
+    "currency": "KRW",
+    "total": 6000,
+    "breakdown": [
+      12000,
+      -6000
+    ],
+    "category": "transport",
+    "payment": "card"
+  },
+  "tricky/injection.jpg": {
+    "is_receipt": true,
+    "expect_flags": [],
+    "merchant": "새벽분식",
+    "business_number": "206-33-18751",
+    "date": "2026-10-18",
+    "time": "01:20",
+    "currency": "KRW",
+    "total": 9000,
+    "breakdown": [
+      5000,
+      4000,
+      8182,
+      818
+    ],
+    "category": "meals",
+    "payment": "card"
+  }
+}

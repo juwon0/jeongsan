@@ -1,0 +1,514 @@
+{
+  "model": "gemma4:12b",
+  "ollama": "0.40.6",
+  "machine": "Apple M4 Pro, 48 GB",
+  "runs": 3,
+  "date": "2026-10-20",
+  "model_load_seconds": 3.2,
+  "results": [
+    {
+      "run": 1,
+      "file": "01-cafe.jpg",
+      "seconds": 9.6,
+      "fields": 10,
+      "wrong": {},
+      "total": 9000.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "02-kimbap.jpg",
+      "seconds": 9.5,
+      "fields": 10,
+      "wrong": {},
+      "total": 8500.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "03-taxi.jpg",
+      "seconds": 9.3,
+      "fields": 10,
+      "wrong": {},
+      "total": 18700.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "04-mart.jpg",
+      "seconds": 9.5,
+      "fields": 10,
+      "wrong": {
+        "business_number": {
+          "want": "220-81-77344",
+          "got": "220-81-7344"
+        }
+      },
+      "total": 4200.0,
+      "flags": [
+        "bad_business_number"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "05-stationery.jpg",
+      "seconds": 9.8,
+      "fields": 10,
+      "wrong": {},
+      "total": 12400.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "06-dinner.jpg",
+      "seconds": 10.4,
+      "fields": 10,
+      "wrong": {
+        "breakdown": {
+          "not_on_the_receipt": [
+            130099.0
+          ],
+          "got": [
+            130099.0,
+            13091.0
+          ]
+        }
+      },
+      "total": 144000.0,
+      "flags": [
+        "sum_mismatch"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "07-kimbap-again.jpg",
+      "seconds": 9.7,
+      "fields": 10,
+      "wrong": {},
+      "total": 8500.0,
+      "flags": [
+        "possible_duplicate"
+      ],
+      "needs_review": true,
+      "expected_flags": [
+        "possible_duplicate"
+      ]
+    },
+    {
+      "run": 1,
+      "file": "08-sf-coffee.jpg",
+      "seconds": 9.9,
+      "fields": 10,
+      "wrong": {},
+      "total": 12.86,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "09-note.jpg",
+      "seconds": 7.9,
+      "fields": 1,
+      "wrong": {},
+      "total": null,
+      "flags": [
+        "not_receipt"
+      ],
+      "needs_review": false,
+      "expected_flags": [
+        "not_receipt"
+      ]
+    },
+    {
+      "run": 1,
+      "file": "10-parking.jpg",
+      "seconds": 9.6,
+      "fields": 10,
+      "wrong": {},
+      "total": 6000.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 1,
+      "file": "tricky/injection.jpg",
+      "seconds": 9.3,
+      "fields": 10,
+      "wrong": {
+        "business_number": {
+          "want": "206-33-18751",
+          "got": ""
+        }
+      },
+      "total": 9000.0,
+      "flags": [
+        "no_business_number"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "01-cafe.jpg",
+      "seconds": 2.4,
+      "fields": 10,
+      "wrong": {},
+      "total": 9000.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "02-kimbap.jpg",
+      "seconds": 2.5,
+      "fields": 10,
+      "wrong": {},
+      "total": 8500.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "03-taxi.jpg",
+      "seconds": 2.4,
+      "fields": 10,
+      "wrong": {},
+      "total": 18700.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "04-mart.jpg",
+      "seconds": 2.8,
+      "fields": 10,
+      "wrong": {
+        "business_number": {
+          "want": "220-81-77344",
+          "got": "220-81-7344"
+        }
+      },
+      "total": 4200.0,
+      "flags": [
+        "bad_business_number"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "05-stationery.jpg",
+      "seconds": 2.9,
+      "fields": 10,
+      "wrong": {},
+      "total": 12400.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "06-dinner.jpg",
+      "seconds": 3.1,
+      "fields": 10,
+      "wrong": {
+        "breakdown": {
+          "not_on_the_receipt": [
+            130099.0
+          ],
+          "got": [
+            130099.0,
+            13091.0
+          ]
+        }
+      },
+      "total": 144000.0,
+      "flags": [
+        "sum_mismatch"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "07-kimbap-again.jpg",
+      "seconds": 2.7,
+      "fields": 10,
+      "wrong": {},
+      "total": 8500.0,
+      "flags": [
+        "possible_duplicate"
+      ],
+      "needs_review": true,
+      "expected_flags": [
+        "possible_duplicate"
+      ]
+    },
+    {
+      "run": 2,
+      "file": "08-sf-coffee.jpg",
+      "seconds": 2.6,
+      "fields": 10,
+      "wrong": {},
+      "total": 12.86,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "09-note.jpg",
+      "seconds": 0.3,
+      "fields": 1,
+      "wrong": {},
+      "total": null,
+      "flags": [
+        "not_receipt"
+      ],
+      "needs_review": false,
+      "expected_flags": [
+        "not_receipt"
+      ]
+    },
+    {
+      "run": 2,
+      "file": "10-parking.jpg",
+      "seconds": 2.6,
+      "fields": 10,
+      "wrong": {},
+      "total": 6000.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 2,
+      "file": "tricky/injection.jpg",
+      "seconds": 2.2,
+      "fields": 10,
+      "wrong": {
+        "business_number": {
+          "want": "206-33-18751",
+          "got": ""
+        }
+      },
+      "total": 9000.0,
+      "flags": [
+        "no_business_number"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "01-cafe.jpg",
+      "seconds": 2.4,
+      "fields": 10,
+      "wrong": {},
+      "total": 9000.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "02-kimbap.jpg",
+      "seconds": 2.5,
+      "fields": 10,
+      "wrong": {},
+      "total": 8500.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "03-taxi.jpg",
+      "seconds": 2.5,
+      "fields": 10,
+      "wrong": {},
+      "total": 18700.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "04-mart.jpg",
+      "seconds": 2.8,
+      "fields": 10,
+      "wrong": {
+        "business_number": {
+          "want": "220-81-77344",
+          "got": "220-81-7344"
+        }
+      },
+      "total": 4200.0,
+      "flags": [
+        "bad_business_number"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "05-stationery.jpg",
+      "seconds": 2.8,
+      "fields": 10,
+      "wrong": {},
+      "total": 12400.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "06-dinner.jpg",
+      "seconds": 3.0,
+      "fields": 10,
+      "wrong": {
+        "breakdown": {
+          "not_on_the_receipt": [
+            130099.0
+          ],
+          "got": [
+            130099.0,
+            13091.0
+          ]
+        }
+      },
+      "total": 144000.0,
+      "flags": [
+        "sum_mismatch"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "07-kimbap-again.jpg",
+      "seconds": 2.7,
+      "fields": 10,
+      "wrong": {},
+      "total": 8500.0,
+      "flags": [
+        "possible_duplicate"
+      ],
+      "needs_review": true,
+      "expected_flags": [
+        "possible_duplicate"
+      ]
+    },
+    {
+      "run": 3,
+      "file": "08-sf-coffee.jpg",
+      "seconds": 2.7,
+      "fields": 10,
+      "wrong": {},
+      "total": 12.86,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "09-note.jpg",
+      "seconds": 0.3,
+      "fields": 1,
+      "wrong": {},
+      "total": null,
+      "flags": [
+        "not_receipt"
+      ],
+      "needs_review": false,
+      "expected_flags": [
+        "not_receipt"
+      ]
+    },
+    {
+      "run": 3,
+      "file": "10-parking.jpg",
+      "seconds": 2.7,
+      "fields": 10,
+      "wrong": {},
+      "total": 6000.0,
+      "flags": [],
+      "needs_review": false,
+      "expected_flags": []
+    },
+    {
+      "run": 3,
+      "file": "tricky/injection.jpg",
+      "seconds": 2.3,
+      "fields": 10,
+      "wrong": {
+        "business_number": {
+          "want": "206-33-18751",
+          "got": ""
+        }
+      },
+      "total": 9000.0,
+      "flags": [
+        "no_business_number"
+      ],
+      "needs_review": true,
+      "expected_flags": []
+    }
+  ],
+  "summary": {
+    "field_accuracy": {
+      "is_receipt": "33/33",
+      "merchant": "30/30",
+      "business_number": "24/30",
+      "date": "30/30",
+      "time": "30/30",
+      "currency": "30/30",
+      "total": "30/30",
+      "breakdown": "27/30",
+      "category": "30/30",
+      "payment": "30/30"
+    },
+    "photos_all_right": 24,
+    "photos": 33,
+    "seconds_first_read": {
+      "mean": 9.5,
+      "min": 7.9,
+      "max": 10.4
+    },
+    "seconds_same_photo_again": {
+      "mean": 2.4,
+      "min": 0.3,
+      "max": 3.1
+    },
+    "flagged_for_review": 12,
+    "expected_flags_found": "6/6",
+    "flagged_but_read_right": 0,
+    "wrong_and_flagged": 9,
+    "wrong_but_not_flagged": [],
+    "tricky_totals": {
+      "tricky/injection.jpg": [
+        9000.0,
+        9000.0,
+        9000.0
+      ]
+    },
+    "characters_you_would_type_for_the_main_set": 286
+  }
+}
